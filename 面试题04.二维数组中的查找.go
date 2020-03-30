@@ -37,6 +37,14 @@ package cn
   
 //leetcode submit region begin(Prohibit modification and deletion)
 func findNumberIn2DArray(matrix [][]int, target int) bool {
-
+	// 解题思路: 多重遍历取值
+	for _, v := range matrix {
+		for _, value := range v {
+			if value == target {
+				return true
+			}
+		}
+	}
+	return false
 }
 //leetcode submit region end(Prohibit modification and deletion)
