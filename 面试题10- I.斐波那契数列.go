@@ -36,7 +36,7 @@ package cn
   
 //leetcode submit region begin(Prohibit modification and deletion)
 //解题：输入n=5  54321
-// 暂时不是最优解决办法：如果数值较大会超时
+// 暂时不是最优解决办法：如果数值较大会超出时间限制
 func fib(n int) int {
 	if n <= 1 {
 		return n

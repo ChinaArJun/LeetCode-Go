@@ -1,5 +1,7 @@
 package cn
 
+import "fmt"
+
 //输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
 //
 // 
@@ -33,8 +35,10 @@ func reversePrint(head *ListNode) []int {
 	// 解题思路：取值，反转
 	// 老是报错 ： panic: runtime error: invalid memory address or nil pointer dereference
 	//			[signal SIGSEGV: segmentation violation code=0x1 addr=0x8 pc=0x4bb046]
-	//
-	if head.Next == nil {
+	/*
+	之前if head.Next == nil 老是报错，是因为head.Next存在null的现象
+	*/
+	if head == nil {
 		return nil
 	}
 	var arr []int
@@ -42,6 +46,7 @@ func reversePrint(head *ListNode) []int {
 		arr = append(arr, head.Val)
 		head = head.Next
 	}
+	fmt.Println(arr)
 	res := make([]int, len(arr))
 	for i := 0; i < len(arr); i ++ {
 		res[i] = arr[len(arr)- 1 - i]
