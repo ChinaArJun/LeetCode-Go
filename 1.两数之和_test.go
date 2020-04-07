@@ -3,6 +3,7 @@ package cn
 import (
 	"fmt"
 	"reflect"
+	"sync"
 	"testing"
 )
 

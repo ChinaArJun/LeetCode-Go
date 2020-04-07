@@ -27,6 +27,6 @@ package cn
   
 //leetcode submit region begin(Prohibit modification and deletion)
 func lengthOfLongestSubstring(s string) int {
-	//
+	start, res, cache = 0, 0,{}
 }
 //leetcode submit region end(Prohibit modification and deletion)
