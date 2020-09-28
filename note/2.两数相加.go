@@ -14,8 +14,7 @@ package note
 // 
 // Related Topics 链表 数学
 
-  
-//leetcode submit region begin(Prohibit modification and deletion)
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -23,7 +22,7 @@ package note
  *     Next *ListNode
  * }
  */
-func addTwoNumbers(l1 *cn.ListNode, l2 *cn.ListNode) *cn.ListNode {
 
+func addTwoNumbers(l1 *ListNode, l2 ListNode) *ListNode {
+	return l1.Next
 }
-//leetcode submit region end(Prohibit modification and deletion)
