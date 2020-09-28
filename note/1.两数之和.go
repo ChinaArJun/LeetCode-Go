@@ -12,7 +12,6 @@ package note
 //所以返回 [0, 1]
 // 
 // Related Topics 数组 哈希表
-
   
 //leetcode submit region begin(Prohibit modification and deletion)
 func twoSum(nums []int, target int) []int {
