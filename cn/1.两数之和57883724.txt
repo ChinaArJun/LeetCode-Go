@@ -1,0 +1,19 @@
+func twoSum(nums []int, target int) []int {
+	// 解题思路：
+	// 时间复杂度是 O(n)
+	// 由于哈希查找的时间复杂度为 O(1)，所以可以利用哈希容器 map 降低时间复杂度
+	// 循环找出每一个元素遍历，将不存在的当前值存入map
+	// 通过map查找key找出另外一个值的位置
+	m := make(map[int]int)
+	for i := 0; i < len(nums); i++ {
+		tag := target - nums[i]
+		if k, ok := m[tag]; ok {
+			return []int{k,i}
+		}
+		m[nums[i]] = i
+	}
+	return nil
+}
+
+//runtime:4 ms
+//memory:3.7 MB

@@ -1,6 +1,12 @@
 package cn
 
 type ListNode struct {
-   Val int
-   Next *ListNode
+	Val  int
+	Next *ListNode
+}
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }

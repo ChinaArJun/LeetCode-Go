@@ -20,6 +20,7 @@ package cn
 // 2 <= n <= 100000 
 // Related Topics 数组 哈希表
 
+// TODO: 思路循环遍历数组，将数组循环插入到map中，通过键值对取到值就说明重复，跳出循环，返回值
   
 //leetcode submit region begin(Prohibit modification and deletion)
 func findRepeatNumber(nums []int) int {
